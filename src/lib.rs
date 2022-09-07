@@ -3,7 +3,7 @@
 #[macro_use]
 extern crate napi_derive;
 
-use std::borrow::Cow;
+use std::{borrow::Cow, convert::TryInto};
 
 use napi::{bindgen_prelude::*, JsBuffer};
 
@@ -47,34 +47,30 @@ impl Clipboard {
   }
 
   #[napi]
-  /// Returns a object contains raw RGBA pixels data buffer and size 
+  /// Returns a object contains raw RGBA pixels data buffer and size
   pub fn get_image(&mut self, env: Env) -> Result<ImageData> {
-    let image = self
+    self
       .inner
       .get_image()
-      .map_err(clipboard_error_to_js_error)?;
-
-    let bytes = unsafe {
-      env.create_buffer_with_borrowed_data(
-        image.bytes.as_ptr(),
-        image.bytes.len(),
-        image.clone(),
-        |i, _| {
-          drop(i);
-        },
-      )
-    }
-    .map(|b| b.into_raw())?;
-
-    let width = image.width;
-
-    let height = image.height;
-
-    Ok(ImageData {
-      width: width.try_into().unwrap(),
-      height: height.try_into().unwrap(),
-      bytes,
-    })
+      .map_err(clipboard_error_to_js_error)
+      .and_then(|image| unsafe {
+        let arboard::ImageData { width, height, .. } = image;
+        let bytes = env
+          .create_buffer_with_borrowed_data(
+            image.bytes.as_ptr(),
+            image.bytes.len(),
+            image,
+            |i, _| {
+              drop(i);
+            },
+          )?
+          .into_raw();
+        Ok(ImageData {
+          width: width.try_into().unwrap(),
+          height: height.try_into().unwrap(),
+          bytes,
+        })
+      })
   }
 
   #[napi]

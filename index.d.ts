@@ -12,7 +12,7 @@ export class Clipboard {
   constructor()
   setText(text: string): void
   getText(): string
-  /** Returns a object contains raw RGBA pixels data buffer and size  */
+  /** Returns a object contains raw RGBA pixels data buffer and size */
   getImage(): ImageData
   /** RGBA bytes */
   setImage(width: number, height: number, image: Buffer): void
