@@ -1,5 +1,5 @@
 {
-  "name": "arboard-darwin-x64",
+  "name": "@enpitsulin/arboard-darwin-x64",
   "version": "0.0.0",
   "os": [
     "darwin"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "@napi-rs/arboard.darwin-x64.node",
+  "main": "enpitsulin_arboard.darwin-x64.node",
   "files": [
-    "@napi-rs/arboard.darwin-x64.node"
+    "enpitsulin_arboard.darwin-x64.node"
   ],
   "description": "arboard binding to Node.js",
   "license": "MIT",

@@ -1,3 +1,3 @@
-# `arboard-darwin-x64`
+# `@enpitsulin/arboard-darwin-x64`
 
-This is the **x86_64-apple-darwin** binary for `arboard`
+This is the **x86_64-apple-darwin** binary for `@enpitsulin/arboard`

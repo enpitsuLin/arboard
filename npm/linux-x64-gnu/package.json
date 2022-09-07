@@ -1,5 +1,5 @@
 {
-  "name": "arboard-linux-x64-gnu",
+  "name": "@enpitsulin/arboard-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "@napi-rs/arboard.linux-x64-gnu.node",
+  "main": "enpitsulin_arboard.linux-x64-gnu.node",
   "files": [
-    "@napi-rs/arboard.linux-x64-gnu.node"
+    "enpitsulin_arboard.linux-x64-gnu.node"
   ],
   "description": "arboard binding to Node.js",
   "license": "MIT",
