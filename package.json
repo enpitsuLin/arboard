@@ -1,10 +1,10 @@
 {
-  "name": "arborad",
+  "name": "arboard",
   "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": ".",
+    "name": "@napi-rs/arboard",
     "triples": {
       "additional": [
         "aarch64-apple-darwin",
@@ -35,5 +35,7 @@
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "version": "napi version"
-  }
+  },
+  "repository": "https://github.com/enpitsuLin/arboard",
+  "description": "arboard binding to Node.js"
 }

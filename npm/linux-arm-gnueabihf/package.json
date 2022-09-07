@@ -1,5 +1,5 @@
 {
-  "name": ".-linux-arm-gnueabihf",
+  "name": "arboard-linux-arm-gnueabihf",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,12 +7,14 @@
   "cpu": [
     "arm"
   ],
-  "main": "..linux-arm-gnueabihf.node",
+  "main": "@napi-rs/arboard.linux-arm-gnueabihf.node",
   "files": [
-    "..linux-arm-gnueabihf.node"
+    "@napi-rs/arboard.linux-arm-gnueabihf.node"
   ],
+  "description": "arboard binding to Node.js",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/enpitsuLin/arboard"
 }

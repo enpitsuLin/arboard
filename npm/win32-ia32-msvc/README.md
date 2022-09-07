@@ -1,3 +1,3 @@
-# `.-win32-ia32-msvc`
+# `arboard-win32-ia32-msvc`
 
-This is the **i686-pc-windows-msvc** binary for `.`
+This is the **i686-pc-windows-msvc** binary for `arboard`

@@ -1,3 +1,3 @@
-# `.-darwin-arm64`
+# `arboard-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `.`
+This is the **aarch64-apple-darwin** binary for `arboard`

@@ -1,5 +1,5 @@
 {
-  "name": ".-freebsd-x64",
+  "name": "arboard-freebsd-x64",
   "version": "0.0.0",
   "os": [
     "freebsd"
@@ -7,12 +7,14 @@
   "cpu": [
     "x64"
   ],
-  "main": "..freebsd-x64.node",
+  "main": "@napi-rs/arboard.freebsd-x64.node",
   "files": [
-    "..freebsd-x64.node"
+    "@napi-rs/arboard.freebsd-x64.node"
   ],
+  "description": "arboard binding to Node.js",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/enpitsuLin/arboard"
 }

@@ -1,3 +1,3 @@
-# `.-linux-arm64-musl`
+# `arboard-linux-arm64-musl`
 
-This is the **aarch64-unknown-linux-musl** binary for `.`
+This is the **aarch64-unknown-linux-musl** binary for `arboard`

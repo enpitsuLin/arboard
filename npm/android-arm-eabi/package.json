@@ -1,5 +1,5 @@
 {
-  "name": ".-android-arm-eabi",
+  "name": "arboard-android-arm-eabi",
   "version": "0.0.0",
   "os": [
     "android"
@@ -7,12 +7,14 @@
   "cpu": [
     "arm"
   ],
-  "main": "..android-arm-eabi.node",
+  "main": "@napi-rs/arboard.android-arm-eabi.node",
   "files": [
-    "..android-arm-eabi.node"
+    "@napi-rs/arboard.android-arm-eabi.node"
   ],
+  "description": "arboard binding to Node.js",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/enpitsuLin/arboard"
 }
