@@ -1,7 +1,9 @@
 import test from 'ava'
 
-import { sum } from '../index.js'
+import { Clipboard } from '../index.js'
 
-test('sum from native', (t) => {
-  t.is(sum(1, 2), 3)
+test('setText and getText work', (t) => {
+  const clipboard = new Clipboard()
+  clipboard.setText('@enpitsulin/arboard')
+  t.is(clipboard.getText(), '@enpitsulin/arboard')
 })
