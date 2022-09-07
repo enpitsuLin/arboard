@@ -1,21 +1,11 @@
 {
-  "name": "arboard",
+  "name": "@enpitsulin/arboard",
   "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "@napi-rs/arboard",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-unknown-linux-gnu",
-        "aarch64-unknown-linux-musl",
-        "aarch64-pc-windows-msvc",
-        "armv7-unknown-linux-gnueabihf",
-        "x86_64-unknown-linux-musl",
-        "i686-pc-windows-msvc"
-      ]
-    }
+    "name": "enpitsulin_arboard",
+    "triples": {}
   },
   "license": "MIT",
   "devDependencies": {

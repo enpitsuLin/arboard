@@ -1,5 +1,5 @@
 {
-  "name": "arboard-win32-x64-msvc",
+  "name": "@enpitsulin/arboard-win32-x64-msvc",
   "version": "0.0.0",
   "os": [
     "win32"
@@ -7,9 +7,9 @@
   "cpu": [
     "x64"
   ],
-  "main": "@napi-rs/arboard.win32-x64-msvc.node",
+  "main": "enpitsulin_arboard.win32-x64-msvc.node",
   "files": [
-    "@napi-rs/arboard.win32-x64-msvc.node"
+    "enpitsulin_arboard.win32-x64-msvc.node"
   ],
   "description": "arboard binding to Node.js",
   "license": "MIT",
